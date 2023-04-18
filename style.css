@@ -48,10 +48,14 @@ input {
 }
 
 ul {
-  display: hidden;
+  /* TODO */
 }
 ul.has-suggestions {
   /* TODO */
+}
+
+.hide {
+  display: none;
 }
 ul li {
   /* TODO */
