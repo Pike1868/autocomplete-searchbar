@@ -83,38 +83,28 @@ const fruits = [
   "Yuzu",
 ];
 
-function search(str) {
-  // TODO
-  if (str === "") {
-    return [];
-  }
-  let lowerCaseFruitsArr = [];
-  fruits.forEach((word) => {
-    lowerCaseFruitsArr.push(word.toLowerCase());
-  });
-  let results = lowerCaseFruitsArr.filter((fruit) => {
-    return fruit.includes(str);
-  });
-  let topResults = results.slice(0, 10);
-  let resultsSet = new Set();
-  topResults.map((result) => resultsSet.add(result));
-  showSuggestions(resultsSet, str);
-}
-
 function searchHandler(e) {
-  // TODO
   if (e.target.value.length === 0) {
     suggestions.innerHTML = "";
   }
-  if (e.target.value !== " ") {
-    let inputVal = e.target.value.toLowerCase();
-    let resultsArray = search(inputVal);
-    return resultsArray;
-  }
+  let inputVal = e.target.value.toLowerCase();
+  search(inputVal);
 }
 
-function showSuggestions(results, inputVal) {
-  // TODO
+function search(str) {
+  if (str === "") {
+    return;
+  }
+  const lowerCaseFruitsArr = fruits.map((word) => word.toLowerCase());
+
+  const results = lowerCaseFruitsArr.filter((fruit) => {
+    return fruit.includes(str);
+  });
+  const topResults = results.slice(0, 10);
+  showSuggestions(topResults, str);
+}
+
+function showSuggestions(results) {
   suggestions.innerHTML = "";
   results.forEach((fruit) => {
     let newLi = document.createElement("li");
@@ -125,7 +115,6 @@ function showSuggestions(results, inputVal) {
 }
 
 function useSuggestion(e) {
-  // TODO
   input.value = e.target.innerText;
   suggestions.innerHTML = "";
 }
