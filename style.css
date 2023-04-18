@@ -16,9 +16,9 @@ body {
   background: rgb(241, 180, 11);
   background: linear-gradient(
     90deg,
-    rgba(241, 180, 11, 1) 9%,
-    rgba(172, 92, 11, 0.998284347918855) 45%,
-    rgba(255, 127, 0, 1) 100%
+    rgba(241, 180, 11, 1) 15%,
+    rgba(223, 117, 11, 0.998) 55%,
+    rgba(255, 127, 0, 1) 80%
   );
   display: flex;
   align-items: center;
@@ -31,21 +31,31 @@ input {
   padding: 0.25em;
 }
 
+input:focus {
+  outline: none;
+}
+
 .search-container {
   /* TODO */
-  width: 25%;
-  border: none;
+  width: 30%;
 }
 .search-container input,
 .search-container .suggestions {
   /* TODO */
+  border: none;
+  font-size: 1em;
+  margin-bottom: 0.25em;
+  background-color: rgba(241, 180, 115, 0.5);
 }
 .search-container input {
   /* TODO */
+  border-bottom: 0.125em solid rgb(251, 56, 30);
+  padding: 0.5em;
 }
 .search-container .suggestions {
   /* TODO */
 }
+
 
 ul {
   /* TODO */
@@ -54,21 +64,17 @@ ul.has-suggestions {
   /* TODO */
 }
 
-.hide {
-  display: none;
-}
 ul li {
   /* TODO */
   list-style: none;
-  background-color: aliceblue;
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  background-color: rgba(255, 166, 0, 0.3);
   width: 100%;
   line-height: 1.5em;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.7);
 }
 ul li:hover {
   /* TODO */
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 85, 0, 0.7);
 }
 
 input {
