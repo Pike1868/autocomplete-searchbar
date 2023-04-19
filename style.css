@@ -6,10 +6,6 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-:focus {
-  /* TODO */
-}
-
 body {
   width: 100vw;
   height: 100vh;
@@ -26,7 +22,6 @@ body {
 }
 
 input {
-  /* TODO */
   width: 100%;
   padding: 0.25em;
 }
@@ -36,7 +31,6 @@ input:focus {
 }
 
 .search-container {
-  /* TODO */
   width: 30%;
   position: absolute;
   top: 50%;
@@ -45,31 +39,17 @@ input:focus {
 }
 .search-container input,
 .search-container .suggestions {
-  /* TODO */
   border: none;
   font-size: 1em;
   margin-bottom: 0.25em;
   background-color: rgba(241, 180, 115, 0.5);
 }
 .search-container input {
-  /* TODO */
   border-bottom: 0.125em solid rgb(251, 56, 30);
   padding: 0.5em;
 }
-.search-container .suggestions {
-  /* TODO */
-}
-
-
-ul {
-  /* TODO */
-}
-ul.has-suggestions {
-  /* TODO */
-}
 
 ul li {
-  /* TODO */
   list-style: none;
   background-color: rgba(255, 166, 0, 0.3);
   width: 100%;
@@ -78,10 +58,5 @@ ul li {
   cursor: pointer;
 }
 ul li:hover {
-  /* TODO */
   background: rgba(255, 85, 0, 0.7);
-}
-
-input {
-  /* TODO */
 }
