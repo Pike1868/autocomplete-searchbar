@@ -1,3 +1,3 @@
-##Fruit Search Project
+**Fruit Search Project**
 
 Build a small scale search bar which suggests various fruits based on user input. Provided a list of fruits, if a user’s typed input is contained anywhere in one of the fruits in the list, then a drop down should appear containing all the fruits which match. As a user continues to add letters to their input, new dropdowns should populate. When a user clicks on one of these options, it should populate in the search bar.
