@@ -14,9 +14,8 @@ describe("useSuggestion", function () {
   it("should populate the input field with the name of the fruit that was clicked", function () {
     let input = document.querySelector("#fruit");
     search("sal");
-    const suggestions = document.querySelectorAll(".suggestions ul li");
-    console.log(suggestions);
     const selected = document.querySelector(".suggestions ul li");
+    console.log(selected);
     useSuggestion({ target: selected });
     let newVal = input.value;
     expect(newVal).toBe("salmonberry");
